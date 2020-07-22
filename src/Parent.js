@@ -25,7 +25,7 @@ class Parent extends Component {
                 <button onClick={this.plus}>Parent + 1</button>
                 <button onClick={this.plusChild}>Child + 1</button>
 
-                <Child ref={this.childRef}/>
+                <Child ref={this.childRef} plusParent={this.plus}/>
             </div>
         );
     }

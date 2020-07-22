@@ -13,8 +13,8 @@ class Child extends Component {
         return (
             <div>
                 <h2>Child:{this.state.count}</h2>
+                <button onClick={this.props.plusParent}>Parent + 1</button>
                 <button onClick={this.plus}>Child + 1</button>
-
             </div>
         );
     }
