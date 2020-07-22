@@ -48,7 +48,11 @@ class List extends Component {
                     // this.state.foods.map(food => <div key={food.id}>{food.name}</div>)
                 }
                 {
-                    this.state.lists.map(item=><div>{item.download_url}</div>)
+                    this.state.lists.map(item=>
+                        <div key={item.id}>
+                            <img src={item.download_url} width="200"></img>
+                            <h2>{item.author}</h2>
+                        </div>)
                 }
             </div>
         );
