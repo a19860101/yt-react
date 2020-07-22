@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import Child2 from './Child2';
 class Parent2 extends Component {
-    constructor(props) {
-        super(props);
-        this.childRef = React.createRef();
-    }
-    
     state = {
         count: 0,
         childCount: 0,
@@ -28,7 +23,6 @@ class Parent2 extends Component {
                 <button onClick={this.plusChild}>Child + 1</button>
 
                 <Child2 
-                    ref={this.childRef} 
                     childCount={this.state.childCount}
                     plusParent={this.plus}
                     plusChild={this.plusChild}
