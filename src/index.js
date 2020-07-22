@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // import Geo from './Geo';
 // import Counter from './Counter';
 // import Ref from './Ref';
-import Parent from './Parent';
+import Parent2 from './Parent2';
 class App extends Component {
     render() {
         return (
@@ -11,7 +11,7 @@ class App extends Component {
                 {/* <Counter /> */}
                 {/* <Geo></Geo> */}
                 {/* <Ref /> */}
-                <Parent></Parent>
+                <Parent2></Parent2>
             </div>
         );
     }
